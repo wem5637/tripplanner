@@ -1,0 +1,29 @@
+.navbar {
+  background-color: #f4e1d2; }
+
+.clearfix {
+  clear: both; }
+
+.planner {
+  float: right;
+  margin-top: 5em; }
+
+#map-canvas {
+  height: 500px;
+  width: 100%; }
+
+.place {
+  height: 5em;
+  padding: 2em;
+  display: block;
+  background-color: lightblue; }
+
+.place > select, .place > label {
+  display: block; }
+
+.place > select {
+  width: 20em; }
+
+.planner {
+  height: 5em;
+  background-color: blue; }

@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const nunjucks = require('nunjucks');
 
+
 const { db, Hotel, Restaurant, Activity } = require('./db');
 
 const app = express();
@@ -19,6 +20,7 @@ app.set('view engine', 'html');
 
 // serve up public dir statically
 app.use(express.static('public'));
+
 
 // root path
 app.get('/', (req, res, next) => {
