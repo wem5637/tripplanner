@@ -7,7 +7,6 @@
     <script src="/jquery/dist/jquery.min.js"></script>
     <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
     <link href="/stylesheets/tripplanner.css" rel="stylesheet">
-
 </head>
 
 <body>
@@ -19,11 +18,11 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">TRIP PLANNER</a>
+                <a class="navbar-brand" id="tripplan" href="#">TRIP PLANNER</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
@@ -35,39 +34,26 @@
     </nav>
     <div class="container-fluid text-center">
         <div class="row content">
-            <div class="col-sm-8 text-left map">
-            <div id="map-canvas">
-            </div>
+            <div class="col-lg-8 text-left map">
+                <div id="map-canvas">
+                </div>
                 <hr>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 sidenav places">
                 <h3>Hotels Restaurants Attractions</h3>
                 <div class="places">
                     {% block content %} {% endblock %}
                 </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 sidenav planner">
+             <h3>Planner</h3>
                 <div class="planner">
-                </div>
-            </div>
-            <div class="ads col-sm-4 sidenav">
-                <div class="well">
-                    <p>ADS</p>
-                </div>
-                <div class="well">
-                    <p>ADS</p>
-                </div>
-            </div>
-            <div class="col-sm-4 sidenav planner">
-                <div class="well">
-                    <p>ADS</p>
-                </div>
-                <div class="well">
-                    <p>ADS</p>
                 </div>
             </div>
         </div>
     </div>
-
 </body>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAenCdbTjJBWmEuI7lgDPseoGh1KvRBLI&sensor=true"></script>
-    <script src="/map.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAenCdbTjJBWmEuI7lgDPseoGh1KvRBLI&sensor=true"></script>
+<script src="/map.js"></script>
+
 </html>
-
-

@@ -1,54 +1,73 @@
+
 .navbar{
-	background-color:#f4e1d2;
-}
-.map{
-	
+	background-color: #ffc664;
+	margin-bottom: 0px;
+
 }
 
 .container-fluid{
-
+	margin: 0px;
 	
 }
+
 
 .clearfix{
 	clear: both;
 
 
 }
-
-.planner{
-	float: right;
-	margin-top: 5em;
+.map{
+	margin: 0px;
+	padding: 0px;
 }
-
-
 
 #map-canvas{
-	height: 500px;
+	height: 60em;
 	width: 100%;
+	float: left;
+
 
 }
 
-.place{
-	
-	height: 5em;
+.places{
+
 	padding: 2em;
-	display: block;
-	background-color: lightblue;
+	
+	background-color: #72abff;
 }
 
-.place>select,.place>label {
-	display: block;	
-}
+
 
 .place>select{
 	width: 20em;
 }
 
 .planner{
-	height: 5em;
-	background-color: blue;
+
+	padding: 2em;
+	
+	background-color: #ff9664;
 }
 
 
+.sidenav{
+	height: 30em;
+	
+}
 
+#tripplan{
+	color: black;
+}
+
+a.navbar-brand{
+	color: black;
+} 
+
+
+.place{
+	height: 6em;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+	color: black;
+}

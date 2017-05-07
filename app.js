@@ -35,6 +35,7 @@ app.get('/', (req, res, next) => {
         restaurants,
         activities,
       });
+    
     })
     .catch(next);
 });
